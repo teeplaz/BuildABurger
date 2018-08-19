@@ -1,0 +1,38 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: Pink;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.label {
+  font-weight: bolder;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: black;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+#burger-title {
+  text-align: center;
+  margin-bottom: 300px;
+  margin-top: 50px;
+}
+
+#add-burger-div {
+  margin: auto 39%;
+}
+
+.flt {
+  float: left;
+}

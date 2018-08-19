@@ -1,0 +1,45 @@
+<div class="container">
+  <h1 id="burger-title">Eat-Da-Burger!</h1>
+
+  <div class="col-lg-4 flt">
+    <ul>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+    <h2>Uneaten Burgers</h2>
+  </div>
+
+  <div class="col-lg-4 flt">
+    <img src="https://www.google.com/search?q=burger&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj8lP2NtfjcAhXDVN8KHbIrDUwQ_AUICygC&biw=1315&bih=730#imgrc=FlWqPlVoBOvs6M:" alt="burger" width="370px" height="225px">
+  </div>
+
+  <div class="col-lg-4 flt">
+    <h2>Eaten Burgers</h2>
+
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-block devoured=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-sm-6 flt" id="add-burger-div">
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+      <button type="submit">Add Burger</button>
+      <button type="submit">Add Burger</button>
+
+      <div class="form-group">
+        <label for="ca">Burger Name:</label>
+        <input type="text" id="ca" name="burgername">
+      </div>
+    </form>
+  </div>
+</div>
+
+<p>Tylor Plaza UNHBC2018</p>
